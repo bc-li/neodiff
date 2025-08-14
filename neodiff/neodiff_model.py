@@ -465,8 +465,6 @@ class NeoDiff(NATransformerModel):
 
             tau_labels = self.scheduler.create_labels(tau_label_loss, mask, ts)
             tau_loss = self.tau_criterion(tau_logits.view(-1, self.args.num_tau), tau_labels.view(-1))
-            # tau_hat = self.tau_predictor(x_t.detach(), mask, encoder_out)
-            # tau_hat = self.tau_predictor(x_t, mask, encoder_out)
 
             if self.args.tau_mse:
                 losses["tau_mse"] = {
