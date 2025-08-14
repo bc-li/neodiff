@@ -47,18 +47,18 @@ Train the NeoDiff model on the IWSLT14 DE-EN dataset using a single GPU:
 bash scripts/iwslt14_de_en/train_neodiff.sh
 ```
 
-### Evaluation
-
-Evaluate the trained model on IWSLT14 DE-EN dataset using default setting:
-```bash
-bash scripts/iwslt14_de_en/evaluate_neodiff.sh
-```
-
 ### Post-training Optimization
 
 Optimize the time schedule for better performance using Bayesian optimization:
 ```bash
 bash scripts/iwslt14_de_en/optimize_neodiff.sh
+```
+
+### Evaluation
+
+Evaluate the trained model on IWSLT14 DE-EN dataset using default setting:
+```bash
+bash scripts/iwslt14_de_en/evaluate_neodiff.sh
 ```
 
 ### LLM-based Evaluation
